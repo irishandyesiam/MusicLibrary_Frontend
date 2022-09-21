@@ -5,10 +5,9 @@ const DisplayMusic = (props) => {
     console.log(props.songs)
 
     return (
-        <table>
+        <table border='2px' style={{'borderCollapse':'collapse'}}>
             <thead>
                 <tr>
-                    <th>id</th>
                     <th>title</th>
                     <th>artist</th>
                     <th>album</th>
@@ -18,21 +17,21 @@ const DisplayMusic = (props) => {
                 </tr>
             </thead>
 
-            <body>
+            <tbody>
             {props.songs.map((songs) => {
                 return (
                     <tr>
-                        <td>{songs.id}</td>
                         <td>{songs.title}</td>
                         <td>{songs.artist}</td>
                         <td>{songs.album}</td>
-                        <td>{songs.release}</td>
+                        <td>{songs.release_date}</td>
                         <td>{songs.genre}</td>
                         <td>{songs.like}</td>
+                        <button>Delete Song</button>
                     </tr>
                 );
             })}
-            </body>
+            </tbody>
         </table>
     )
 }
