@@ -27,7 +27,6 @@ const DisplayMusic = (props) => {
                         <td>{songs.release_date}</td>
                         <td>{songs.genre}</td>
                         <td>{songs.like}</td>
-                        <button>Delete Song</button>
                     </tr>
                 );
             })}
