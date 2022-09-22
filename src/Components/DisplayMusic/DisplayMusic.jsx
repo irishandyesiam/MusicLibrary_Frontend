@@ -1,11 +1,12 @@
 // create an HTML table and map over the songs passed down through props to generate the table data rows//
+import './DisplayMusic.css';
 
 const DisplayMusic = (props) => {
 
     console.log(props.songs)
 
     return (
-        <table border='2px' style={{'borderCollapse':'collapse'}}>
+        <table className='table' border='2px' style={{'borderCollapse':'collapse'}}>
             <thead>
                 <tr>
                     <th>title</th>

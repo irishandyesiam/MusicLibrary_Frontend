@@ -2,6 +2,7 @@
 // once the form is submitted the value the user entered should be passed to a function on the App.jsx component that then //
 // filters the songs by the term depending on if that term mataches any of the song's properties.//
 import React, {useState} from 'react';
+import './SearchBar.css';
 
 const SearchBar = (props) => {
 
@@ -16,7 +17,7 @@ const SearchBar = (props) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='searchbar' onSubmit={handleSubmit}>
             <input type='text' value={search_term} placeholder="...title" onChange={(event) => setSearchTerm(event.target.value)}/>
             <input type='submit' value="Search"/>
         </form>

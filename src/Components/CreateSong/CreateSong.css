@@ -1,0 +1,16 @@
+.createsong {
+    display: flex;
+    justify-content: space-between;
+    text-emphasis-color: white;
+    margin-left: 100px;
+    width: 75%;
+    
+}
+
+.add-a-song {
+    font-family: Segoe UI;
+    font-size:xx-large;
+    font-weight: 900;
+    color: white;
+    padding: 1em;
+}

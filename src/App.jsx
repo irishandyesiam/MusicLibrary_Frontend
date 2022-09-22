@@ -3,6 +3,8 @@ import axios from 'axios';
 import DisplayMusic from './Components/DisplayMusic/DisplayMusic';
 import CreateSong from './Components/CreateSong/CreateSong';
 import SearchBar from './Components/SearchBar/SearchBar';
+import './App.css';
+
 
 function App() {
 
@@ -55,13 +57,12 @@ function App() {
   // }
 
   return (
-    <div>
-      <h1>Music Library</h1>
+    <div className='container'>
+      <h1 className='header'>Music Library</h1>
       <SearchBar submittedSearchTerm={getFilteredSong}/>
       <DisplayMusic songs={songs}/>
       <CreateSong createSongSubmit={createSong}/>
     </div>
-
   );
 }
 
