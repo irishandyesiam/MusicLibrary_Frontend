@@ -9,12 +9,12 @@ const DisplayMusic = (props) => {
         <table className='table' border='2px' style={{'borderCollapse':'collapse'}}>
             <thead>
                 <tr>
-                    <th>title</th>
-                    <th>artist</th>
-                    <th>album</th>
-                    <th>release date</th>
-                    <th>genre</th>
-                    <th>like</th>
+                    <th>TITLE</th>
+                    <th>ARTIST</th>
+                    <th>ALBUM</th>
+                    <th>RELEASE DATE</th>
+                    <th>GENRE</th>
+                    <th>LIKES</th>
                 </tr>
             </thead>
 
